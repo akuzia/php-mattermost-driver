@@ -33,8 +33,8 @@ composer require gnello/php-mattermost-driver:1.*
 ```php
 use \Gnello\Mattermost\Driver;
 
-// construct your own GuzzleHttp client instance
-$guzzle = new GuzzleHttp/Client(...);
+// construct your own HttpClient instance
+$http = new GuzzleHttp/Client(...);
 
 $driver = new Driver($guzzle, [
     'url' => 'your_chat_url',
